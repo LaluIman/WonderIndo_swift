@@ -14,22 +14,27 @@ struct ListView: View {
             HStack{
                     Image(place.locationImage)
                         .resizable()
-                        .frame(width: 150, height: 120)
+                        .scaledToFill()
+                        .frame(width: 140, height: 130)
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                     VStack(alignment: .leading, spacing: 6){
                             Text(place.name)
-                                .font(.title).bold()
+                                .font(.system(size: 25)).bold()
                             HStack{
                                 Image(systemName: "mappin.and.ellipse")
                                     .foregroundStyle(.red)
-                                    .font(.title3)
+                                    .font(.headline)
                                 Text(place.location)
+                                    .font(.subheadline)
                             }
                     }
-                    .frame(width: 240,height: 120 ,alignment: .leading)
+                    .frame(width: 220,height: 120 ,alignment: .leading)
             }
         }
         .padding()
+        .background(.white)
+        .clipShape(RoundedRectangle(cornerRadius: 20))
+        .padding(.bottom)
     }
 }
 
