@@ -37,6 +37,11 @@ struct DetailView: View {
                                 .font(.headline)
                         }
                         .frame(width: 400, alignment: .leading)
+                        VStack{
+                            Image(place.provinsiImage)
+                                .resizable()
+                                .frame(width: 400, height: 290)
+                        }
                     }
                 }
             }
@@ -62,6 +67,6 @@ struct DetailView: View {
         location: "Magelang, Jawa Tengah",
         info: "Candi Borobudur adalah sebuah candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia. Candi ini terletak kurang lebih 100 km di sebelah barat daya Semarang, 86 km di sebelah barat Surakarta, dan 40 km di sebelah barat laut Yogyakarta.",
         locationImage: "borobudur",
-        provinsiImage: "borobudurpro"
+        provinsiImage: "Boro"
     ))
 }
