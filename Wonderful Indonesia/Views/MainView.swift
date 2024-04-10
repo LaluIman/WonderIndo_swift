@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @ObservedObject var placeManager: PlaceManager
+    @State var selected: Place? = nil
     @State private var searchTerm: String = ""
     
     var body: some View {
@@ -53,7 +54,13 @@ struct MainView: View {
                         ForEach(searchTerm.isEmpty ? placeManager.places :placeManager.places.filter {
                             $0.name.lowercased().contains(searchTerm.lowercased()) }) { place in
                             ListView(place: place)
+                                    .onTapGesture {
+                                                    selected = place
+                                                  }
                         }
+                            .fullScreenCover(item: $selected) { place in
+                                        DetailView(place: place)
+                                      }
                     }
                     .padding(.horizontal)
                   }
