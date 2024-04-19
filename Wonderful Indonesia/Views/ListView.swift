@@ -34,6 +34,8 @@ struct ListView: View {
         .padding()
         .background(.white)
         .clipShape(RoundedRectangle(cornerRadius: 20))
+        .shadow(radius: 1)
+        .shadow(radius: 2,x: 4,y: 5)
         .padding(.bottom)
     }
 }

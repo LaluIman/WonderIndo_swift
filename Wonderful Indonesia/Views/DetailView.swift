@@ -31,7 +31,7 @@ struct DetailView: View {
                             Text(place.location)
                                 .font(.title2)
                         }
-                        .padding(.bottom)
+                        .padding(.bottom, 30)
                         VStack{
                             Text(place.info)
                                 .font(.headline)
@@ -45,6 +45,7 @@ struct DetailView: View {
                     }
                 }
             }
+            .navigationTitle(place.name)
             .navigationBarItems(trailing: Button(action: {
                     }) {
                         ZStack{

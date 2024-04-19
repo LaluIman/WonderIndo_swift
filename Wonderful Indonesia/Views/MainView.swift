@@ -30,7 +30,8 @@ struct MainView: View {
                                     .font(.system(size: 20))
                                 Image(systemName: "person.circle")
                                     .font(.title)
-                                .foregroundStyle(.blue)}
+                                    .foregroundStyle(.blue)
+                            }
                         }
                     }
                     .padding(.horizontal,20)
@@ -47,8 +48,9 @@ struct MainView: View {
                             }
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .foregroundColor(.black)
-                            .padding(.horizontal, 20)
+                            .padding(.horizontal, 15)
                             .padding(.vertical)
+                            .shadow(radius: 1)
                             
                         }
                         ForEach(searchTerm.isEmpty ? placeManager.places :placeManager.places.filter {
