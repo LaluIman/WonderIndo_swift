@@ -21,23 +21,37 @@ struct DetailView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                         .padding()
                     VStack{
-                        Text(place.name)
-                            .font(.system(size: 40)).bold()
+                        VStack {
+                            Text(place.name)
+                                .font(.system(size: 40)).bold()
                             .padding(.bottom,3)
                         HStack{
-                            Image(systemName: "mappin.and.ellipse")
+                            Image(systemName: "mappin.and.ellipse.circle")
                                 .foregroundStyle(.red)
                                 .font(.title2)
                             Text(place.location)
                                 .font(.title2)
                         }
                         .padding(.bottom, 30)
+                        }
                         VStack{
                             Text(place.info)
                                 .font(.headline)
                         }
                         .frame(width: 400, alignment: .leading)
                         VStack{
+                            VStack{
+                                HStack {
+                                    Image(systemName: "map.circle")
+                                        .font(.title)
+                                        .foregroundStyle(.blue)
+                                    Text("Peta Lokasi")
+                                        .font(.title).bold()
+                                }
+                                Text(place.location)
+                            }
+                            .padding()
+                            .frame(maxWidth: .infinity, alignment: .leading)
                             Image(place.provinsiImage)
                                 .resizable()
                                 .frame(width: 400, height: 290)

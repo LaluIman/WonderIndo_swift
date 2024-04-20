@@ -21,7 +21,7 @@ struct ListView: View {
                             Text(place.name)
                                 .font(.system(size: 25)).bold()
                             HStack{
-                                Image(systemName: "mappin.and.ellipse")
+                                Image(systemName: "mappin.and.ellipse.circle")
                                     .foregroundStyle(.red)
                                     .font(.headline)
                                 Text(place.location)
@@ -35,7 +35,7 @@ struct ListView: View {
         .background(.white)
         .clipShape(RoundedRectangle(cornerRadius: 20))
         .shadow(radius: 1)
-        .shadow(radius: 2,x: 4,y: 5)
+        .shadow(radius: 1,x: 6,y: 5)
         .padding(.bottom)
     }
 }

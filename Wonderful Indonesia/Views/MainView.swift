@@ -17,24 +17,6 @@ struct MainView: View {
             ScrollView(.vertical, showsIndicators: false){
                     //top
                 VStack{
-                    HStack{
-                        Image("wonderful")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 150)
-                        Spacer()
-                        HStack{
-                            NavigationLink(destination: AuthorView()){
-                                Text("Author")
-                                    .foregroundStyle(.blue)
-                                    .font(.system(size: 20))
-                                Image(systemName: "person.circle")
-                                    .font(.title)
-                                    .foregroundStyle(.blue)
-                            }
-                        }
-                    }
-                    .padding(.horizontal,20)
                     VStack{
                         Image("id 2")
                             .renderingMode(.original)
@@ -47,7 +29,6 @@ struct MainView: View {
                                 Image(systemName: "magnifyingglass")
                             }
                             .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .foregroundColor(.black)
                             .padding(.horizontal, 15)
                             .padding(.vertical)
                             .shadow(radius: 1)
@@ -68,6 +49,24 @@ struct MainView: View {
                   }
                 }
             .background(.ultraThinMaterial)
+            .navigationBarItems(leading:
+                Image("wonderful")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 100, height: 150)
+                                )
+            .navigationBarItems(
+                trailing:
+                    NavigationLink(destination: AuthorView()){
+                        Text("Author")
+                            .foregroundStyle(.blue)
+                            .font(.system(size: 20))
+                        Image(systemName: "person.circle")
+                            .font(.title3)
+                            .foregroundStyle(.blue)
+                        
+                    }
+            )
             }
         }
     }
