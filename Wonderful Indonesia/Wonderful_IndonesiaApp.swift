@@ -11,7 +11,7 @@ import SwiftUI
 struct Wonderful_IndonesiaApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView(placeManager: PlaceManager())
+            MainView()
         }
     }
 }

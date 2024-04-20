@@ -27,6 +27,13 @@ struct ListView: View {
                                 Text(place.location)
                                     .font(.subheadline)
                             }
+                        HStack{
+                            Image(systemName:"star.fill")
+                                .foregroundStyle(.yellow)
+                                .font(.headline)
+                            Text(place.stars)
+                                .font(.headline)
+                        }
                     }
                     .frame(width: 220,height: 120 ,alignment: .leading)
             }
@@ -34,8 +41,7 @@ struct ListView: View {
         .padding()
         .background(.white)
         .clipShape(RoundedRectangle(cornerRadius: 20))
-        .shadow(radius: 1)
-        .shadow(radius: 1,x: 6,y: 5)
+        .shadow(radius: 2)
         .padding(.bottom)
     }
 }
@@ -46,6 +52,7 @@ struct ListView: View {
         location: "Magelang, Jawa Tengah",
         info: "Candi Borobudur adalah sebuah candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia. Candi ini terletak kurang lebih 100 km di sebelah barat daya Semarang, 86 km di sebelah barat Surakarta, dan 40 km di sebelah barat laut Yogyakarta.",
         locationImage: "borobudur",
-        provinsiImage: "borobudurpro"
+        provinsiImage: "borobudurpro",
+        stars: "9/10"
     ))
 }

@@ -21,19 +21,28 @@ struct DetailView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                         .padding()
                     VStack{
-                        VStack {
-                            Text(place.name)
-                                .font(.system(size: 40)).bold()
-                            .padding(.bottom,3)
-                        HStack{
-                            Image(systemName: "mappin.and.ellipse.circle")
-                                .foregroundStyle(.red)
-                                .font(.title2)
-                            Text(place.location)
-                                .font(.title2)
-                        }
-                        .padding(.bottom, 30)
-                        }
+                            VStack{
+                                Text(place.name)
+                                    .font(.system(size: 40)).bold()
+                                    .padding(.bottom,3)
+                                HStack{
+                                    Image(systemName: "mappin.and.ellipse.circle")
+                                        .foregroundStyle(.red)
+                                        .font(.title2)
+                                    Text(place.location)
+                                        .font(.title2)
+                                    HStack{
+                                        Image(systemName:"star.fill")
+                                            .foregroundStyle(.yellow)
+                                            .font(.title2)
+                                        Text(place.stars)
+                                            .font(.title2)
+                                    }
+                                
+                                }
+                                .padding(.bottom, 30)
+                            }
+                            
                         VStack{
                             Text(place.info)
                                 .font(.headline)
@@ -82,6 +91,7 @@ struct DetailView: View {
         location: "Magelang, Jawa Tengah",
         info: "Candi Borobudur adalah sebuah candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia. Candi ini terletak kurang lebih 100 km di sebelah barat daya Semarang, 86 km di sebelah barat Surakarta, dan 40 km di sebelah barat laut Yogyakarta.",
         locationImage: "borobudur",
-        provinsiImage: "Boro"
+        provinsiImage: "Boro",
+        stars: "9/10"
     ))
 }
