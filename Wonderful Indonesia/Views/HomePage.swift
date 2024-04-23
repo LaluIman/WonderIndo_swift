@@ -12,12 +12,33 @@ struct HomePage: View {
         NavigationView{
             ScrollView(.vertical, showsIndicators: false){
                 VStack {
-                    Text("Selamat datang")
+                    Text("Selamat datang 👋")
                         .font(.title).bold()
                         .padding()
                         .frame(maxWidth: .infinity, alignment: .leading)
+                    VStack{
+                        VStack {
+                            Text("Tempat trending ⭐️")
+                                .font(.title3).bold()
+                            HStack {
+                                Image(systemName: "info.circle")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                                Text("Menurut source dari Google")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                            }
+                        }
+                        .padding(.horizontal)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        // horizontal view
+                        HoriView()
+                        
+                        NavigationLink("Lihat selengkapnya ",destination: PlaceView(placeManager: PlaceManager()))
+                            .padding(.horizontal)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    }
                     
-                   HoriView()
                 }
             }
                 .navigationBarItems(leading:

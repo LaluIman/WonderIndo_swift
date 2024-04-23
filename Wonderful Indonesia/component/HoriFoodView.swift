@@ -1,13 +1,13 @@
 //
-//  HoriView.swift
+//  HoriFoodView.swift
 //  Wonderful Indonesia
 //
-//  Created by Lalu Iman Abdullah on 20/04/24.
+//  Created by Lalu Iman Abdullah on 23/04/24.
 //
 
 import SwiftUI
 
-struct HoriView: View {
+struct HoriFoodView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false){
             HStack{
@@ -111,5 +111,5 @@ struct HoriView: View {
 }
 
 #Preview {
-    HoriView()
+    HoriFoodView()
 }

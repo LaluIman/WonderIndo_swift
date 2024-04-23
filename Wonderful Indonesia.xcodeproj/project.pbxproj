@@ -13,6 +13,7 @@
 		811F4A6F2BD3E7670086761B /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F4A6E2BD3E7670086761B /* HomePage.swift */; };
 		811F4A722BD413050086761B /* HoriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F4A712BD413050086761B /* HoriView.swift */; };
 		815C21F52BC61DF0004E65A4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815C21F42BC61DF0004E65A4 /* DetailView.swift */; };
+		81BA13C12BD763DE0061BFC6 /* HoriFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA13C02BD763DE0061BFC6 /* HoriFoodView.swift */; };
 		81E67AEE2BC20A690077E800 /* Wonderful_IndonesiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E67AED2BC20A690077E800 /* Wonderful_IndonesiaApp.swift */; };
 		81E67AF22BC20A6C0077E800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E67AF12BC20A6C0077E800 /* Assets.xcassets */; };
 		81E67AF52BC20A6C0077E800 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E67AF42BC20A6C0077E800 /* Preview Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		811F4A6E2BD3E7670086761B /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		811F4A712BD413050086761B /* HoriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoriView.swift; sourceTree = "<group>"; };
 		815C21F42BC61DF0004E65A4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		81BA13C02BD763DE0061BFC6 /* HoriFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoriFoodView.swift; sourceTree = "<group>"; };
 		81E67AEA2BC20A690077E800 /* Wonderful Indonesia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wonderful Indonesia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E67AED2BC20A690077E800 /* Wonderful_IndonesiaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wonderful_IndonesiaApp.swift; sourceTree = "<group>"; };
 		81E67AF12BC20A6C0077E800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				811F4A712BD413050086761B /* HoriView.swift */,
+				81BA13C02BD763DE0061BFC6 /* HoriFoodView.swift */,
 			);
 			path = component;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				811F4A652BD3B49B0086761B /* FoodView.swift in Sources */,
 				81E67B202BC2154D0077E800 /* ListView.swift in Sources */,
 				811F4A722BD413050086761B /* HoriView.swift in Sources */,
+				81BA13C12BD763DE0061BFC6 /* HoriFoodView.swift in Sources */,
 				811F4A6F2BD3E7670086761B /* HomePage.swift in Sources */,
 				81E67B182BC20C070077E800 /* PlaceView.swift in Sources */,
 				81E67AEE2BC20A690077E800 /* Wonderful_IndonesiaApp.swift in Sources */,
