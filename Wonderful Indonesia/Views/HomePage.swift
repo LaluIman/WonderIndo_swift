@@ -17,28 +17,28 @@ struct HomePage: View {
                         .padding()
                         .frame(maxWidth: .infinity, alignment: .leading)
                     VStack{
-                        VStack {
+                        HStack {
                             Text("Tempat trending ⭐️")
-                                .font(.title3).bold()
-                            HStack {
-                                Image(systemName: "info.circle")
-                                    .font(.caption)
-                                    .foregroundColor(.gray)
-                                Text("Menurut source dari Google")
-                                    .font(.caption)
-                                    .foregroundColor(.gray)
-                            }
+                                .font(.title2).bold()
+                            Spacer()
+                            NavigationLink("See more",destination: PlaceView(placeManager: PlaceManager()))
                         }
                         .padding(.horizontal)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        // horizontal view
+                        //place horizontal view
                         HoriView()
                         
-                        NavigationLink("Lihat selengkapnya ",destination: PlaceView(placeManager: PlaceManager()))
-                            .padding(.horizontal)
+                        HStack {
+                            Text("Makanan populer 🍽️")
+                                .font(.title2).bold()
+                            Spacer()
+                            NavigationLink("See more",destination: FoodView(foodManager: FoodManager()))
+                        }
+                        .padding(.top, 20)
+                        .padding(.horizontal)
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HoriFoodView()
                     }
-                    
                 }
             }
                 .navigationBarItems(leading:

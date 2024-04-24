@@ -21,70 +21,70 @@ class FoodManager: ObservableObject{
         Food(
             foodName: "Rendang",
             foodLocation: "",
-            foodImage: "",
+            foodImage: "Rendang",
             foodInfo: ""
         ),
         //sate
         Food(
             foodName: "Sate",
             foodLocation: "",
-            foodImage: "",
+            foodImage: "Sate",
             foodInfo: ""
         ),
         //Nasgor
         Food(
             foodName: "Nasi goreng",
             foodLocation: "",
-            foodImage: "",
+            foodImage: "Nasig",
             foodInfo: ""
         ),
         //Nasi Kuning
         Food(
             foodName: "Nasi Kuning",
             foodLocation: "",
-            foodImage: "",
+            foodImage: "Naskun",
             foodInfo: ""
         ),
         //indomie
         Food(
             foodName: "Indomie",
             foodLocation: "",
-            foodImage: "",
+            foodImage: "Indomie",
             foodInfo: ""
         ),
         //Somay
         Food(
             foodName: "Siomay",
             foodLocation: "",
-            foodImage: "",
+            foodImage: "Siomay",
             foodInfo: ""
         ),
         //esdoger
         Food(
             foodName: "Es doger",
             foodLocation: "",
-            foodImage: "",
+            foodImage: "Esdog",
             foodInfo: ""
         ),
         //Nasi Padang
         Food(
             foodName: "Nasi Padang",
             foodLocation: "",
-            foodImage: "",
+            foodImage: "Naspad",
             foodInfo: ""
         ),
         //pisang goreng
         Food(
             foodName: "Pisang Goreng",
             foodLocation: "",
-            foodImage: "",
+            foodImage: "Pisang",
             foodInfo: ""
         ),
         //Cireng
         Food(
             foodName: "Cireng",
             foodLocation: "",
-            foodImage: "",
+            foodImage: "Cireng",
             foodInfo: ""
         ),
     ]

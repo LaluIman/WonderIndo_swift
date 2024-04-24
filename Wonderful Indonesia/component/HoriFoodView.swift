@@ -19,12 +19,12 @@ struct HoriFoodView: View {
                         .shadow(radius: 2)
                         .overlay{
                             VStack{
-                                Image("borobudur")
+                                Image("Rendang")
                                     .resizable()
                                     .scaledToFill()
                                     .frame(width: 250, height: 150)
                                 .clipShape(RoundedRectangle(cornerRadius: 10))
-                                Text("Candi Borobudur")
+                                Text("Rendang")
                                     .font(.title2).bold()
                                 .frame(width: 250, alignment: .leading)
                             }
@@ -37,12 +37,12 @@ struct HoriFoodView: View {
                     .shadow(radius: 2)
                     .overlay{
                         VStack {
-                            Image("komodo")
+                            Image("Sate")
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 250, height: 150)
                             .clipShape(RoundedRectangle(cornerRadius: 10))
-                            Text("Pulau Komodo")
+                            Text("Sate ayam")
                                 .font(.title2).bold()
                             .frame(width: 250, alignment: .leading)
                         }
@@ -55,12 +55,12 @@ struct HoriFoodView: View {
                     .shadow(radius: 2)
                     .overlay{
                         VStack {
-                            Image("bromo")
+                            Image("Nasig")
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 250, height: 150)
                             .clipShape(RoundedRectangle(cornerRadius: 10))
-                            Text("Gunung Bromo")
+                            Text("Nasi goreng")
                                 .font(.title2).bold()
                             .frame(width: 250, alignment: .leading)
                         }
@@ -73,12 +73,12 @@ struct HoriFoodView: View {
                     .shadow(radius: 2)
                     .overlay{
                         VStack {
-                            Image("prambanan")
+                            Image("Naskun")
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 250, height: 150)
                             .clipShape(RoundedRectangle(cornerRadius: 10))
-                            Text("Candi Prambanan")
+                            Text("Nasi Kuning")
                                 .font(.title2).bold()
                             .frame(width: 250, alignment: .leading)
                         }
@@ -92,12 +92,12 @@ struct HoriFoodView: View {
                     .shadow(radius: 2)
                     .overlay{
                         VStack {
-                            Image("ampat")
+                            Image("Esdog")
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 250, height: 150)
                             .clipShape(RoundedRectangle(cornerRadius: 10))
-                            Text("Raja Ampat")
+                            Text("Es doger")
                                 .font(.title2).bold()
                             .frame(width: 250, alignment: .leading)
                         }
